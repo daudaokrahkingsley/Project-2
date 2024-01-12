@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploying My second Project</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: skyblue;
+        font-weight: bolder;
+      }
+      .div2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 60px;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div2">
+      <form action="http://localhost:5000" , method="POST">
+        <p>
+          Type in your Ads Price here
+          <input type="number" name="Ads Price" min="10" max="50" /><input
+            type="submit"
+            value="OK"
+          />
+        </p>
+      </form>
+      <br />
+      <p>Prediction you get paid: ${{result}}</p>
+    </div>
+
+    <p
+      style="
+        position: absolute;
+        left: 35%;
+        top: 60%;
+        color: red;
+        font-size: 11px;
+      "
+    >
+      The Values must be less than or equal to 50
+    </p>
+  </body>
+</html>
